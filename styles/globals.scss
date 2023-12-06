@@ -1,5 +1,45 @@
+@font-face { 
+  font-family: "Avenir Next"; 
+  src: url('../public/fonts/AvenirNextW1G-Regular.otf'); 
+  font-weight: 400; 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: "Avenir Next"; 
+  src: url('../public/fonts/AvenirNextW1G-Medium.otf'); 
+  font-weight: 500; 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: "Avenir Next"; 
+  src: url('../public/fonts/AvenirNextW1G-SemiCnBold.otf'); 
+  font-weight: 600; 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: "Avenir Next"; 
+  src: url('../public/fonts/AvenirNextW1G-Bold.otf'); 
+  font-weight: 700; 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: "Avenir Next"; 
+  src: url('../public/fonts/AvenirNextW1G-SemiCnBlack.otf'); 
+  font-weight: 800; 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: "Avenir Next"; 
+  src: url('../public/fonts/AvenirNextW1G-CnBlack.otf'); 
+  font-weight: 900; 
+  font-style: normal; 
+} 
+
+
 $bg-white: #fff;
+$color-blue: #213F7D;
 $font-base: 16px;
+$font-family: 'Avenir Next';
 
 *{
   padding: 0;
@@ -10,4 +50,18 @@ $font-base: 16px;
 body{
   background-color: $bg-white;
   font-size: $font-base;
+  font-family: $font-family;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+input{
+  outline: none;
+}
+
+button{
+  outline: none;
 }
