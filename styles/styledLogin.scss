@@ -1,0 +1,108 @@
+.flex-container{
+    max-width: 1440px;
+    width: 86%;
+    margin: 6rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // height: 100vh;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7rem;
+}
+
+form{
+    width: 27.9375rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    h3{
+        color: #213F7D;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: -0.1rem;
+    }
+
+    p{
+        color: #545F7D;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}
+
+.form-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    input{
+        border-radius: 0.3125rem;
+        border: 2px solid rgba(84, 95, 125, 0.15);
+        width: 100%;
+        padding: 1rem;
+        background-color: #fff;
+    }
+    
+    input::placeholder{
+        color: #545F7D;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    
+    .password-container{
+        position: relative;
+        display: flex;
+        align-items: center;
+    
+        input{
+            padding-right: 4rem;
+        }
+        button{
+            color: #39CDCC;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.075rem;
+            text-transform: uppercase;
+            position: absolute;
+            right: 1rem;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+    
+    .forgot-password{
+        color: #39CDCC;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.075rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
+    .login-btn{
+        border-radius: 0.5rem;
+        background: #39CDCC;
+        width: 100%;
+        border: none;
+        color: #FFF;
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.0875rem;
+        text-transform: uppercase;
+        padding: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
