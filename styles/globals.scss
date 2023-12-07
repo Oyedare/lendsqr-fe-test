@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @font-face { 
   font-family: "Avenir Next"; 
   src: url('../public/fonts/AvenirNextW1G-Regular.otf'); 
@@ -37,6 +39,7 @@
 
 
 $bg-white: #fff;
+$bg-grey: #FBFBFB;;
 $color-blue: #213F7D;
 $font-base: 16px;
 $font-family: 'Avenir Next';
@@ -48,7 +51,7 @@ $font-family: 'Avenir Next';
 }
 
 body{
-  background-color: $bg-white;
+  background-color: $bg-grey;
   font-size: $font-base;
   font-family: $font-family;
   overflow-x: hidden;
@@ -64,4 +67,8 @@ input{
 
 button{
   outline: none;
+}
+
+.layout-flex{
+  display: flex;
 }
