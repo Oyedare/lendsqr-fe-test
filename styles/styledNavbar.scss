@@ -1,5 +1,4 @@
 nav{
-    max-width: 1440px;
     width: 100%;
     padding: 1.5rem 0;
     background-color: #FFF;
@@ -12,6 +11,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.menu-bar{
+    display: none;
 }
 
 .nav-logo-input{
@@ -100,6 +103,27 @@ nav{
         font-family: 'Work Sans', sans-serif;        
         font-size: 1rem;
         font-weight: 500;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-logo-input{
+        gap: 3rem;
+    }
+
+    .nav-actions,.nav-cta-container{
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .input-container,.nav-actions{
+        display: none;
+    }
+
+    .menu-bar{
+        display: block;
+        cursor: pointer;
     }
 }
 

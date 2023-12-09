@@ -5,8 +5,9 @@ import Image from 'next/image'
 import Avatar from '@/assets/avatar.svg'
 import LogoSm from '@/assets/logo-sm'
 import NotificationIcon from '@/assets/notification'
+import { IoMdClose, IoMdMenu } from "react-icons/io";
 
-const Navbar = () => {
+const Navbar = ({showSidebar,setShowSidebar}:any) => {
   return (
     <nav>
         <div className="nav-container">
@@ -47,6 +48,18 @@ const Navbar = () => {
                 </div>
                 
             </div>
+
+            {showSidebar ? (
+                <div onClick={()=>setShowSidebar(false)} className="menu-bar">
+                    <IoMdClose size='2rem'/>
+
+                </div>
+            ):(
+                <div onClick={()=>setShowSidebar(true)} className="menu-bar">
+                    <IoMdMenu size='2rem'/>
+
+                </div>
+            )}
         </div>
     </nav>
   )

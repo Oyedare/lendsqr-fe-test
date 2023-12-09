@@ -1,19 +1,26 @@
+"use client"
+import MobileSidebar from '@/components/mobile-sidebar'
 import Navbar from '@/components/navbar'
 import Sidebar from '@/components/sidebar'
-import React from 'react'
+import React,{useState} from 'react'
 
 export default function AppLayout({
     children,
   }: {
     children: React.ReactNode
   }) {
+
+    const [showSidebar,setShowSidebar] = useState<boolean>(false)
   
     return (
         <>
-            <Navbar />
+            <Navbar showSidebar = {showSidebar} setShowSidebar = {setShowSidebar}/>
             <div className="layout-flex">
-                <Sidebar />
-                {children}
+              {showSidebar&&(
+                <MobileSidebar />
+              )}
+              <Sidebar />
+              {children}
             </div>
         </>
     )
