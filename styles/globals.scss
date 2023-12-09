@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+  font-family: 'SF Compact Text';
+  font-style: italic;
+  font-weight: 400;
+  src: local('SF Compact Text'), url('https://fonts.cdnfonts.com/s/14246/sf-compact-text-italic-58646f7cbab10.woff') format('woff');
+}
+@font-face {
+  font-family: 'SF Compact Text';
+  font-style: normal;
+  font-weight: 800;
+  src: local('SF Compact Text'), url('https://fonts.cdnfonts.com/s/14246/sf-compact-text-heavy-58646f645b774.woff') format('woff');
+}
 @font-face { 
   font-family: "Avenir Next"; 
   src: url('../public/fonts/AvenirNextW1G-Regular.otf'); 
@@ -61,7 +73,7 @@ a{
   text-decoration: none;
 }
 
-input{
+input,select{
   outline: none;
 }
 

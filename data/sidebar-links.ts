@@ -18,7 +18,7 @@ import TransactionIcon from "@/assets/transaction";
 import UserIcon from "@/assets/users";
 import WhitelistIcon from "@/assets/whitelist";
 
-export const LinkData = [
+export const LinkData:SideBarLinks[] = [
     {   
         id: 1,
         linkTitle: 'CUSTOMERS',
