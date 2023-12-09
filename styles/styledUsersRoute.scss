@@ -29,6 +29,7 @@
     flex-direction: column;
     gap: .8rem;
     max-width: 15rem;
+    height: 10rem;
     width: 100%;
     padding: 1.5rem;
 
@@ -269,4 +270,77 @@ tbody{
     }
 }
 
+@media (max-width: 1024px) {
+    .users-container{
+        padding: 2.5rem 1rem;
+    }
 
+    .user-dashboard-container{
+        gap: 1rem;
+    }
+
+    .card{
+        padding: 1rem;
+        padding-right: 0;
+
+        h5{
+            font-size: .78rem;
+        }
+
+        p{
+            font-size: 1.3rem;
+        }
+    }
+
+    .table-container{
+        overflow: auto;
+    }
+
+    table {
+        padding: 1rem;
+        // border-spacing: 2rem 1rem;
+
+
+    }
+
+    tr{
+        border-spacing: 2rem 1rem;
+    }
+    
+    th,td {
+        font-size: 0.7rem;
+        padding-right: 10rem;
+        // border-spacing: 5rem 0;
+        // border-spacing: 2rem 1rem;
+
+    }
+    
+    // tbody tr td {
+    //     font-size: 1rem;
+    //     padding: 0.75rem 0;
+    // }
+    
+    .td-btn {
+        padding: 0.5rem 0;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .users-container{
+        width: 100vw;
+
+    }
+}
+
+@media (max-width: 560px) {
+    .user-dashboard-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pagination-container{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}

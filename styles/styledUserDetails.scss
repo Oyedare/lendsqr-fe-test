@@ -230,3 +230,54 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .grid-container{
+        grid-template-columns: repeat(3,1fr);
+
+    }
+}
+
+@media (max-width: 768px) {
+    .user-details-container{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .user-details-profile{
+        flex-wrap: wrap;
+    }
+
+    .user-details-container-head{
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .btn-container{
+        button{
+            padding: .5rem;
+        }
+    }
+
+    .tab{
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        .tab-item{
+            p{
+                font-size: .8rem;
+            }
+            .bottom-line{
+                width: 5rem;
+            }
+        }
+    }
+}
