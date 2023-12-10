@@ -3,7 +3,7 @@ const fetchUsers = async() => {
     url.searchParams.append('page', '1');
     url.searchParams.append('limit', '10');
    
-    const response = await fetch(url.toString())
+    const response = await fetch(url.toString(),{ cache: 'no-store' })
 
     if(!response.ok){
         throw new Error('failed to fetch')
