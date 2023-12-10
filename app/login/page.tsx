@@ -28,7 +28,7 @@ const Login: React.FC = () => {
       await signInWithEmailAndPassword(auth, email, password);
       setLoading(false)
       toast.success('Logged in successfully');
-      router.push('/');
+      router.push('/users');
     } catch (error: any) {
       if (error) {
         setLoading(false)
