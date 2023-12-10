@@ -10,7 +10,11 @@ type TabData = {
     category: string
 }
 
-const UserDetailsProfile = ({data}:any) => {
+type UsersDataProp = {
+    data: Users
+}
+
+const UserDetailsProfile = ({data}: UsersDataProp) => {
     const [selectedTab,setSelectedTab] = useState<string | null | undefined>('General Details')
     
     const tabData: TabData[] = [

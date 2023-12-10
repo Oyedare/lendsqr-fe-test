@@ -9,13 +9,12 @@
 .back-btn{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--font-base);
 
     a{
-        color: #545F7D;
-        font-family: 'Work Sans', sans-serif;        
-        font-size: 1rem;
-        font-weight: 400;
+        color: var(--color-light-grey);
+        font-size: var(--font-base);
+        font-weight: var(--font-normal);
     }
 }
 
@@ -24,40 +23,36 @@
     align-items: center;
     justify-content: space-between;
     .title{
-        color: #213F7D;
-        font-family: 'Work Sans', sans-serif;        
+        color: var(--color-blue);
         font-size: 1.5rem;
-        font-weight: 500;
+        font-weight: var(--font-medium);
     }
 
     .btn-container{
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: var(--font-base);
 
         button{
             padding: .7rem;
-            // width: 10.625rem;
-            // height: 2.5rem;
             border-radius: 0.5rem;
             text-align: center;
-            font-family: 'Work Sans', sans-serif;        
             font-size: 0.875rem;
-            font-weight: 600;
+            font-weight: var(--font-semi-bold);
             letter-spacing: 0.0875rem;
             text-transform: uppercase;
-            background: #fff;
+            background: var(--bg-white);
             cursor: pointer;
         }
 
         .blacklist{
-            border: 1px solid #E4033B;
-            color: #E4033B;
+            border: 1px solid var(--color-red);
+            color: var(--color-red);
         }
 
         .activate{
-            border: 1px solid #39CDCC;
-            color: #39CDCC;
+            border: 1px solid var(--color-aqua);
+            color: var(--color-aqua);
         }
     }
 }
@@ -71,14 +66,13 @@
 .user-details-profile-head-container{
     border-radius: 0.25rem;
     border: 1px solid rgba(33, 63, 125, 0.06);
-    background: #FFF;
+    background: var(--bg-white);
     box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
     width: 100%;
-    padding: 1rem;
+    padding: var(--font-base);
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     gap: 2rem;
 }
 
@@ -96,41 +90,36 @@
 
 .name-container{
     h4{
-        color: #213F7D;
-        font-family: 'Work Sans', sans-serif;        
+        color: var(--color-blue);
         font-size: 1.375rem;
-        font-weight: 500;
+        font-weight: var(--font-medium);
     }
     p{
-        color: #545F7D;
-        font-family: 'Work Sans', sans-serif;        
+        color: var(--color-light-grey);
         font-size: 0.875rem;
-        font-weight: 400;
+        font-weight: var(--font-normal);
     }
 }
 
 .user-tier{
     p{
-        color: #545F7D;
-        font-family: 'Work Sans', sans-serif;        
+        color: var(--color-light-grey);
         font-size: 0.875rem;
-        font-weight: 500;
+        font-weight: var(--font-medium);
     }
 }
 
 .account-details{
     h4{
-        color: #213F7D;
-        font-family: Work Sans;
+        color: var(--color-blue);
         font-size: 1.375rem;
-        font-weight: 500;
+        font-weight: var(--font-medium);
     }
 
     p{
-        color: #213F7D;
-        font-family: Work Sans;
+        color: var(--color-blue);
         font-size: 0.75rem;
-        font-weight: 400;
+        font-weight: var(--font-normal);
     }
 }
 
@@ -138,7 +127,7 @@
     width: 0.0625rem;
     height: 5rem;
     opacity: 0.2;
-    background: #545F7D;
+    background: var(--color-light-grey);
 }
 
 .tab{
@@ -155,20 +144,19 @@
         p{
             color: rgba(0, 0, 0, 0.80);
             text-align: center;
-            font-family: 'Work Sans', sans-serif;        
-            font-size: 1rem;
-            font-weight: 400;
+            font-size: var(--font-base);
+            font-weight: var(--font-normal);
             cursor: pointer;
         }
     
         .active-tab{
-            color: #39CDCC;
+            color: var(--color-aqua);
         }
     
         .bottom-line{
             width: 10.625rem;
             height: 0.125rem;
-            background: #39CDCC;
+            background: var(--color-aqua);
         }
     }
 }
@@ -176,14 +164,13 @@
 .user-details-profile-body-container{
     border-radius: 0.25rem;
     border: 1px solid rgba(33, 63, 125, 0.06);
-    background: #FFF;
+    background: var(--bg-white);
     box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
     width: 100%;
     padding: 2.5rem;
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
-    // gap: 2.5rem;
 }
 
 .info{
@@ -193,10 +180,9 @@
     border-bottom:  1px solid rgba(33, 63, 125,0.1);
     padding: 2rem 0;
     h3{
-        color: #213F7D;
-        font-family: Work Sans;
-        font-size: 1rem;
-        font-weight: 500;
+        color: var(--color-blue);
+        font-size: var(--font-base);
+        font-weight: var(--font-medium);
     }
 }
 
@@ -215,18 +201,16 @@
         gap: .7rem;
 
         h5{
-            color: #545F7D;
-            font-family: Work Sans;
+            color: var(--color-light-grey);
             font-size: 0.75rem;
-            font-weight: 400;
+            font-weight: var(--font-normal);
             text-transform: uppercase;
         }
 
         p{
-            color: #545F7D;
-            font-family: Work Sans;
-            font-size: 1rem;
-            font-weight: 500;
+            color: var(--color-light-grey);
+            font-size: var(--font-base);
+            font-weight: var(--font-medium);
         }
     }
 }
@@ -256,7 +240,7 @@
 
     .user-details-container-head{
         flex-direction: column;
-        gap: 1rem;
+        gap: var(--font-base);
         justify-content: flex-start;
         align-items: flex-start;
     }
@@ -268,7 +252,7 @@
     }
 
     .tab{
-        gap: 1rem;
+        gap: var(--font-base);
         flex-wrap: wrap;
 
         .tab-item{

@@ -1,12 +1,11 @@
 .login-container{
-    background-color: #fff;
+    background-color: var(--bg-white);
 }
 
 .flex-container{
     max-width: 1440px;
     margin: auto;
     width: 86%;
-    // padding: 6rem 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +17,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 7rem;
-    // width: 70%;
 
     img{
         width: 100%;
@@ -27,7 +25,6 @@
 }
 
 form{
-    // width: 27.9375rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -37,17 +34,19 @@ form{
     display: flex;
     flex-direction: column;
     gap: .6rem;
+
     h3{
-        color: #213F7D;
+        color: var(--color-blue);
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: var(--font-bold);
         letter-spacing: -0.1rem;
+        font-family: var(--font-family-1);
     }
 
     p{
-        color: #545F7D;
+        color: var(--color-grey);
         font-size: 1.25rem;
-        font-weight: 400;
+        font-weight: var(--font-normal);
     }
 }
 
@@ -56,19 +55,20 @@ form{
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
+
     input{
         border-radius: 0.3125rem;
         border: 2px solid rgba(84, 95, 125, 0.15);
         width: 100%;
-        padding: 1rem;
-        background-color: #fff;
+        padding: var(--font-base);
+        background-color: var(--bg-white);
     
     }
     
     input::placeholder{
-        color: #545F7D;
+        color: var(--color-grey);
         font-size: 0.875rem;
-        font-weight: 400;
+        font-weight: var(--font-normal);
     }
     
     .password-container{
@@ -80,13 +80,13 @@ form{
             padding-right: 4rem;
         }
         button{
-            color: #39CDCC;
+            color: var(--color-aqua);
             font-size: 0.75rem;
-            font-weight: 700;
+            font-weight: var(--font-bold);
             letter-spacing: 0.075rem;
             text-transform: uppercase;
             position: absolute;
-            right: 1rem;
+            right: var(--font-base);
             border: none;
             background-color: transparent;
             cursor: pointer;
@@ -94,9 +94,9 @@ form{
     }
     
     .forgot-password{
-        color: #39CDCC;
+        color: var(--color-aqua);
         font-size: 0.75rem;
-        font-weight: 700;
+        font-weight: var(--font-bold);
         letter-spacing: 0.075rem;
         text-transform: uppercase;
         cursor: pointer;
@@ -104,16 +104,16 @@ form{
     
     .login-btn{
         border-radius: 0.5rem;
-        background: #39CDCC;
+        background: var(--color-aqua);
         width: 100%;
         border: none;
         color: #FFF;
         text-align: center;
         font-size: 0.875rem;
-        font-weight: 600;
+        font-weight: var(--font-semi-bold);
         letter-spacing: 0.0875rem;
         text-transform: uppercase;
-        padding: 1rem;
+        padding: var(--font-base);
         cursor: pointer;
     }
 }

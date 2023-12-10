@@ -1,7 +1,24 @@
 import '@/styles/styledUserDetails.scss'
 
-const GeneralDetails = ({data}:any) => {
-    const Info = [
+type UsersDataProp = {
+    data: Users
+}
+
+type SubData = {
+    subTitle: string,
+    text: string
+}
+
+type InfoData = {
+    title: string,
+    sub: SubData[],
+    id: number
+}
+
+
+const GeneralDetails = ({data}:UsersDataProp) => {
+    
+    const Info:InfoData[] = [
         {
             title: 'Personal Information',
             sub: [

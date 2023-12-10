@@ -7,7 +7,12 @@ import LogoSm from '@/assets/logo-sm'
 import NotificationIcon from '@/assets/notification'
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 
-const Navbar = ({showSidebar,setShowSidebar}:any) => {
+type StateType = {
+    showSidebar: boolean
+    setShowSidebar: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Navbar = ({showSidebar,setShowSidebar}:StateType) => {
   return (
     <nav>
         <div className="nav-container">
