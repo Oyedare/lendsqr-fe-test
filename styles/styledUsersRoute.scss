@@ -98,9 +98,33 @@ tbody{
     
     .td-btn{
         border-radius: 6.25rem;
-        background: rgb(84, 95, 125,0.06);
-        padding: .7 0rem;
+        background: rgba(84, 95, 125,0.06);
+        padding: .7rem 1rem;
         color: var(--color-light-grey);
+        text-align: center;
+    }
+
+    .btn-active{
+        border-radius: 6.25rem;
+        background: rgba(57, 205, 98,0.06);                
+        color: var(--bg-green);
+        text-align: center;
+        padding: .5rem 0rem;
+    }
+
+    .pending{
+        border-radius: 6.25rem;
+        background: rgba(233, 178, 0,0.1);
+        padding: .5rem 0rem;       
+        color: var(--bg-yellow);
+        text-align: center;
+    }
+
+    .blacklist{
+        border-radius: 6.25rem;
+        background: rgba(228, 3, 59,0.1);
+        padding: .5rem 0rem;      
+        color: var(--color-red);
         text-align: center;
     }
 }

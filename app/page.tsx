@@ -6,8 +6,8 @@ import Navbar from '@/components/navbar'
 export default function Home() {
   return (
     <ProtectedRoute>
-      <Navbar />
-      <Sidebar />
+      {/* <Navbar />
+      <Sidebar /> */}
     </ProtectedRoute>
   )
 }

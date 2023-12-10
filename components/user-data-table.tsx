@@ -73,7 +73,7 @@ const UserDataTable = ({ data }:UsersDataProp) => {
                         <td>{item.phoneNumber}</td>
                         <td>{item.dateJoined}</td>
                         <td>
-                            <div className="td-btn">
+                            <div className={item.status === "Active" ? "btn-active" : item.status === "Pending" ? "pending" : item.status === "Blacklisted" ? "blacklist" : "td-btn"}>
                                 {item.status}
                             </div>
                         </td>
