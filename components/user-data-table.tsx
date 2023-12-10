@@ -9,21 +9,14 @@ import { Pagination } from '@mui/material';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
-const UserDataTable = ({ data }:any) => {
+type UsersDataProp = {
+    data: Users[]
+}
+
+const UserDataTable = ({ data }:UsersDataProp) => {
+    
     const [filterToggle,setFilterToggle] = useState<boolean>(false)
     const [moreToggle,setMoreToggle] = useState<string | null>(null)
-
-    // useEffect(() => {
-    //     const handleClickOutside = () => {
-    //         setMoreToggle(null)
-    //     };
-    
-    //     document.addEventListener('mousedown', handleClickOutside);
-    
-    //     return () => {
-    //       document.removeEventListener('mousedown', handleClickOutside);
-    //     };
-    // }, []);
     
     const handleFilterToggle = () =>{
         setFilterToggle(!filterToggle)

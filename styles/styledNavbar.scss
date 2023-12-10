@@ -1,7 +1,7 @@
 nav{
     width: 100%;
     padding: 1.5rem 0;
-    background-color: #FFF;
+    background-color: var(--bg-white);
     filter: drop-shadow(3px 0px 20px rgba(0, 0, 0, 0.04));
 }
 
@@ -35,24 +35,24 @@ nav{
         background: #FFF;
         height: 2.5rem;
         width: 100%;
-        padding: 1rem;
-        font-size: 1rem;
-        color: #000;
+        padding: var(--font-base);
+        font-size: var(--font-base);
+        color: var(--color-black);
     }
 
     input::placeholder{
-        color:  #545F7D;
+        color:  var(--color-light-grey);
         font-family: 'Work Sans', sans-serif;        
         font-size: 0.875rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: var(--font-normal);
         line-height: normal;
     }
 
     button{
         position: absolute;
         right: 0;
-        background-color: #39CDCC;
+        background-color: var(--color-aqua);
         border: none;
         height: 2.5rem;
         width: 3.5rem;
@@ -72,10 +72,10 @@ nav{
 
     a{
         color: #213F7D;
-        font-family: 'Roboto', sans-serif;        
-        font-size: 1rem;
+        font-family: var(--font-family-2);        
+        font-size: var(--font-base);
         font-style: normal;
-        font-weight: 400;
+        font-weight: var(--font-normal);
         line-height: normal;
         text-decoration-line: underline;
     }
@@ -96,11 +96,9 @@ nav{
 .profile-name{
     display: flex;
     align-items: center;
-    // gap: .4rem;
 
     h4{
         color: #213F7D;
-        font-family: 'Work Sans', sans-serif;        
         font-size: 1rem;
         font-weight: 500;
     }

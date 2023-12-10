@@ -43,5 +43,7 @@ type Users = {
     "guarantorNumber":string,
     "guarantorEmail":string,
     "guarantorRelationship":string,
+    "userId": number,
+    "accountNo": string,
     "id":string
 }
