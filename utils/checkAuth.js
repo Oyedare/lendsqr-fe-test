@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '@/firebaseConfig';
 
 export default function ProtectedRoute({ children }) {
@@ -12,6 +12,8 @@ export default function ProtectedRoute({ children }) {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (!user) {
         router.push('/login');
+      }else{
+        router.push('/users');
       }
     });
 

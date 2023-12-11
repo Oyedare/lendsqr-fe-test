@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, SyntheticEvent } from 'react';
+import React, { useState } from 'react';
 import '@/styles/styledLogin.scss';
 import Logo from '@/assets/logo';
 import illustration from '@/assets/login-illustration.svg';
@@ -18,7 +18,7 @@ const Login: React.FC = () => {
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const handleLogin = async (e: SyntheticEvent) => {
+  const handleLogin = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
 
     const auth = getAuth(firebaseApp);
@@ -37,7 +37,7 @@ const Login: React.FC = () => {
     }
   };
 
-  const handlePasswordVisibility = (e: SyntheticEvent) => {
+  const handlePasswordVisibility = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     setShowPassword(!showPassword);
   };
